@@ -25,7 +25,7 @@ int main(){
 
     //参数意义见上面服务器端 
     dest_addr.sin_family=AF_INET;
-     dest_addr.sin_port=htons(DEST_PORT);
+    dest_addr.sin_port=htons(DEST_PORT);
     dest_addr.sin_addr.s_addr=inet_addr(DEST_IP);
     bzero(&(dest_addr.sin_zero),8);
     
